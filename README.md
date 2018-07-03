@@ -1,3 +1,5 @@
 # Portfolio
-My Portfolio (HTML, CSS, Bootstrap3) + mobile version.
-You can see this at codePen: https://codepen.io/margaritazz/full/wyOMMw/ (the link is at the top).
+My Portfolio (Bootstrap3, CSS, jQuery) + mobile version.
+
+
+You can see this at codePen: https://margarita-zagalets-portfolio.000webhostapp.com (the link is at the top).
