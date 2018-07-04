@@ -13,4 +13,4 @@ Challenges completed:
 
 5) made with love
 
-You can see this at codePen: https://margarita-zagalets-portfolio.000webhostapp.com (the link is at the top).
+You can see this project here: https://margarita-zagalets-portfolio.000webhostapp.com (the link is at the top).
