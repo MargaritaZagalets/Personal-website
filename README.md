@@ -1,7 +1,7 @@
 # Personal website
-My personal website about me, my core skills, including the set of projects done as a test or working projects.
+My personal website about me, my core skills, including the set of projects done as a test or working projects (used CSS, Bootstrap3, jQuery).
 
-Challenges:
+Challenges completed:
 
 1) adaptive design
 
