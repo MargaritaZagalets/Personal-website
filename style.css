@@ -30,23 +30,6 @@ body > .container-fluid {
     border-color: rgba(0, 0, 0, 0);
 }
 
-.navbar-inverse .navbar-brand {
-    color: white;
-}
-
-.navbar-inverse .navbar-brand:hover {
-    color: white;
-}
-
-.navbar-inverse .navbar-brand:focus {
-    color: white;
-}
-
-.navbar-brand {
-    font-size: 22px;
-    font-family: 'Open Sans', sans-serif;
-}
-
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
     background-color: rgba(0, 0, 0, 0);
@@ -93,80 +76,69 @@ scrollhide-nav {
 
 .title-header {
     margin-top: 150px;
-    margin-bottom: 170px;
+    margin-bottom: 110px;
     font-size: 58px;
     margin-left: 5%;
 }
 
-.scroll-down {
-    opacity: 1;
-    -webkit-transition: all .5s ease-in 3s;
-    transition: all .5s ease-in 3s;
-}
-
-.scroll-down {
+#scroll a span {
+    position: absolute;
     margin-left: 6%;
-    bottom: 30px;
-    display: block;
-    width: 52px;
-    height: 52px;
-    border: 5px solid #FFF;
-    background-size: 14px auto;
-    border-radius: 50%;
-    z-index: 2;
-    -webkit-animation: bounce 2s infinite 2s;
-    animation: bounce 2s infinite 2s;
-    -webkit-transition: all .2s ease-in;
-    transition: all .2s ease-in;
-}
-
-.scroll-down:before {
-    position: fixed;
-    top: calc(50% - 8px);
-    left: calc(50% - 6px);
+    width: 24px;
+    height: 24px;
+    border-left: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    display: block;
-    width: 12px;
-    height: 12px;
-    content: "";
-    border-style: solid;
-    border-color: white;
-    border-width: 0 0 5px 5px;
+    -webkit-animation: sdb04 2s infinite;
+    animation: sdb04 2s infinite;
+    box-sizing: border-box;
 }
 
-@keyframes bounce {
-    0%,
-    100%,
-    20%,
-    50%,
-    80% {
-        -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0);
+@-webkit-keyframes sdb04 {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+    }
+    20% {
+        -webkit-transform: rotate(-45deg) translate(-10px, 10px);
     }
     40% {
-        -webkit-transform: translateY(-10px);
-        -ms-transform: translateY(-10px);
-        transform: translateY(-10px);
+        -webkit-transform: rotate(-45deg) translate(0, 0);
     }
-    60% {
-        -webkit-transform: translateY(-5px);
-        -ms-transform: translateY(-5px);
-        transform: translateY(-5px);
+}
+
+@keyframes sdb04 {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
     }
+    20% {
+        transform: rotate(-45deg) translate(-10px, 10px);
+    }
+    40% {
+        transform: rotate(-45deg) translate(0, 0);
+    }
+}
+
+.scroll-down a {
+    position: absolute;
+    margin-left: 6%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+
+.scroll-down a:hover {
+    opacity: .5;
 }
 
 .full-page {
     height: 100vh;
     margin-bottom: 30px;
-}
-
-.about-me-border {
-    border: 10px solid white;
-    width: 90%;
-    height: auto;
-    padding-bottom: 3%;
-    margin-top: 0;
 }
 
 .about-me-header {
@@ -176,7 +148,7 @@ scrollhide-nav {
 }
 
 .about-me-text {
-    padding: 5% 5% 2% 5%;
+    margin: 100px 5% 100px 5%;
     font-size: 26px;
 }
 
@@ -354,30 +326,40 @@ a:hover {
 
 @media (max-width: 767px) {
     .title-header {
-        margin-bottom: 100px;
+        margin-bottom: 150px;
         margin-top: 50px;
         font-size: 40px;
         margin-left: 5%;
+    }
+
+    #scroll a span {
+        margin-left: 7%;
+        border-left: 5px solid #fff;
+        border-bottom: 5px solid #fff;
+        box-sizing: border-box;
+    }
+
+    .scroll-down a {
+        margin-left: 7%;
+    }
+
+    .scroll-down a:hover {
+        opacity: .5;
     }
 
     .full-page {
         height: auto;
     }
 
-    .about-me-border {
-        border: 5px solid white;
-        width: 98%;
-        margin-top: 0;
-    }
-
     .about-me-header {
-        font-size: 34px;
+        font-size: 30px;
         margin-bottom: -7px;
         margin-left: 1.2%;
     }
 
     .about-me-text {
-        font-size: 18px;
+        margin: 50px 5% 50px 5%;
+        font-size: 19px;
     }
 
     .about-me-img {
@@ -500,6 +482,11 @@ a:hover {
         margin-top: 20px;
         font-size: 30px;
         margin-bottom: 50px;
+    }
+
+    .about-me-text {
+        margin: 30px 5% 30px 5% ;
+        font-size: 17px;
     }
 
     .tools-title {
