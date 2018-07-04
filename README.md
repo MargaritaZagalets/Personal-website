@@ -5,12 +5,10 @@ Challenges completed:
 
 1) adaptive design
 
-2) crossbrowsering
+2) jQuery animation
 
-3) jQuery animation
+3) minimalist design
 
-4) minimalist design
-
-5) made with love
+4) made with love
 
 You can see this project here: https://margarita-zagalets-portfolio.000webhostapp.com (the link is at the top).
